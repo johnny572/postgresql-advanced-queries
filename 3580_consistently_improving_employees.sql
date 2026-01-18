@@ -1,9 +1,5 @@
 /*
 Problem: 3580 - Find Consistently Improving Employees
-Difficulty: Medium
-Platform: LeetCode
-Database: PostgreSQL
-
 Objective:
 Identify employees whose last three performance reviews show
 strictly increasing ratings based on review_date.
@@ -20,9 +16,6 @@ Concepts Used:
 - Filtering latest N records per group
 - Aggregation with HAVING
 - Conditional validation logic
-
-Author: <Your Name>
-Last Updated: 2026-01-18
 */
 -- Step 1: Rank reviews by recency per employee
 WITH ranked_reviews AS (
@@ -85,7 +78,4 @@ PostgreSQL window functions such as:
 - 3580 – Consistently Improving Employees  
   (Trend validation using ROW_NUMBER + LAG)
 
-Purpose:
-- Interview preparation
-- Real-world analytics patterns
-- PostgreSQL optimization practice
+
